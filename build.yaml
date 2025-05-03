@@ -19,7 +19,8 @@ steps:
            '--template-file-gcs-location=gs://$_DATAFLOW_BASE_BUCKET/$_DATAFLOW_TEMPLATE_NAME.json',
            '--parameters=project_id=$PROJECT_ID,battery_telemetry_subscription=$_BATTERY_PUBSUB_SUBSCRIPTION_NAME,driving_telemetry_subscription=$_DRIVING_PUBSUB_SUBSCRIPTION_NAME,environment_telemetry_subscription=$_ENVIRONMENT_PUBSUB_SUBSCRIPTION_NAME,firestore_collection=$_FIRESTORE_COLLECTION_NAME_,output_topic=$_OUTPUT_PUBSUB_TOPIC_NAME,image_api=$_IMAGE_API_URL,system_id=$_SYSTEM_ID',
            '--region=$_REGION_ID',
-           '--max-workers=1'
+           '--max-workers=1',
+           '--update'
     ]
     waitFor: ['Build Dataflow Flex Template']
 options:
