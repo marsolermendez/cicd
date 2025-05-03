@@ -30,7 +30,7 @@ substitutions:
   _DATAFLOW_JOB_NAME: mar-edem
   _DATAFLOW_TEMPLATE_NAME: mar-edem
   _REGION_ID: europe-west1
-  _ARTIFACT_REGISTRY_REPOSITORY: marsolermendez-cicd
+  _ARTIFACT_REGISTRY_REPOSITORY: edem
   _ARTIFACT_REGISTRY_IMAGE_NAME: mar-edem
   _DATAFLOW_PYTHON_FILE_PATH: solucion.py
   _DATAFLOW_REQUIREMENTS_FILE_PATH: requirements.txt
